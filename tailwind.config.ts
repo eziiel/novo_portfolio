@@ -9,7 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        gitblog: "url('/git_blog/git_blog_04.png')",
+        'blog-logo': "url('/git_blog/blog_logo.png')",
+        'coffee-logo': "url('/coffee/coffee_logo.png')",
+        'hallo-logo': "url('/halloween/hallo_logo.png')",
       },
     },
   },
