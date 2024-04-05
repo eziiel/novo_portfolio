@@ -1,3 +1,6 @@
+'use client'
+
+import { ProjectFocusProvider } from '@/components/context/project-guide'
 import About from '@/components/nav/about'
 import Contacts from '@/components/nav/contact'
 import HomePage from '@/components/nav/home'
@@ -8,7 +11,9 @@ export default function Home() {
     <div>
       <HomePage />
       <About />
-      <Projects />
+      <ProjectFocusProvider>
+        <Projects />
+      </ProjectFocusProvider>
       <Contacts />
     </div>
   )
