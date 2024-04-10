@@ -48,7 +48,9 @@ export default function Header() {
             flex justify-center items-center
             w-8 h-8 
             rounded-xl
-            data-[flag=true]:bg-white"
+            data-[flag=true]:bg-red-600
+            data-[flag=true]:text-white
+            "
           >
             <a onClick={() => setFlag('about')} href="#about">
               <AvatarIcon />

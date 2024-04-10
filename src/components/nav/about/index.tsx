@@ -1,3 +1,6 @@
+// import SvgAboutTop from '@/components/svg-about/top'
+import PoweredBySVGLeft from '@/utils/svg/left'
+import PoweredBySVGRight from '@/utils/svg/right'
 import React from 'react'
 
 export default function About() {
@@ -5,12 +8,12 @@ export default function About() {
     <div
       id="about"
       className="pt-16 h-screen flex items-center
-      justify-center
+      justify-center 
     "
     >
       <main
         className="w-2/4 h-full flex flex-col justify-center
-        items-center gap-28
+        items-center gap-16
       "
       >
         <p className="text-center">
@@ -21,7 +24,13 @@ export default function About() {
           também estudando pela Rocketseat.
         </p>
 
-        <h1>Sobre mim</h1>
+        <div className="flex items-center justify-center w-full">
+          <PoweredBySVGLeft />
+          {/* <SvgAboutTop /> */}
+          <h1 className="z-40 p-8 font-bold bg-white">Sobre mim</h1>
+          {/* <SvgAboutBottom /> */}
+          <PoweredBySVGRight />
+        </div>
 
         <p className="text-center">
           Como comecei agora realizar projetos com programação na empresa que
