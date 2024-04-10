@@ -24,19 +24,22 @@ export default function About() {
           também estudando pela Rocketseat.
         </p>
 
-        <div className="flex items-center justify-center w-full">
+        <div className="flex items-top justify-center w-full">
           <PoweredBySVGLeft />
           {/* <SvgAboutTop /> */}
-          <h1 className="z-40 p-8 font-bold bg-white">Sobre mim</h1>
+          <h1 className="min-w-[150px] z-40 mt-4 p-8 font-bold bg-white">
+            Sobre mim
+          </h1>
           {/* <SvgAboutBottom /> */}
           <PoweredBySVGRight />
         </div>
 
         <p className="text-center">
           Como comecei agora realizar projetos com programação na empresa que
-          trabalho, mas por algum tempo me em sites como FrontEnd-Mentor,
-          dribbble para melhorar algorítimos e lógica de programação prático em
-          sites como HackerRank, FreeCodeCamp, CodeWars.
+          trabalho, mas por algum tempo me dediquei em sites como
+          FrontEnd-Mentor, dribbble para aprimorar meus conhecimeos com UX/UI.
+          algorítimos e lógica de programação prático em sites como HackerRank,
+          FreeCodeCamp, CodeWars.
         </p>
       </main>
     </div>
