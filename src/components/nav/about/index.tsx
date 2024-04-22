@@ -1,6 +1,5 @@
 // import SvgAboutTop from '@/components/svg-about/top'
 import PoweredBySVGLeft from '@/utils/svg/left'
-import PoweredBySVGRight from '@/utils/svg/right'
 import React from 'react'
 
 export default function About() {
@@ -8,7 +7,7 @@ export default function About() {
     <div
       id="about"
       className="pt-16 h-screen flex items-center
-      justify-center 
+      justify-center
     "
     >
       <main
@@ -25,13 +24,17 @@ export default function About() {
         </p>
 
         <div className="flex items-top justify-center w-full">
-          <PoweredBySVGLeft />
+          <div className="rotate-180">
+            <PoweredBySVGLeft />
+          </div>
           {/* <SvgAboutTop /> */}
-          <h1 className="min-w-[150px] z-40 mt-4 p-8 font-bold bg-white">
+          <h1 className="min-w-[150px] mt-4 p-8 font-bold bg-white">
             Sobre mim
           </h1>
           {/* <SvgAboutBottom /> */}
-          <PoweredBySVGRight />
+          <div className="rotate-360">
+            <PoweredBySVGLeft />
+          </div>
         </div>
 
         <p className="text-center">

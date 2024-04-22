@@ -7,8 +7,8 @@ const PoweredBySVGLeft = () => {
       height="150"
       role="img"
       viewBox="0 0 891 264"
-      width="191"
-      className="w-full h-auto"
+      width="200"
+      className="w-full h-auto z-0"
       data-lines="true"
       aria-label="A bunch of connecting lines that form into the CPU, with the text Powered By on top of the the CPU. Gradient lines are animating along the drawn lines, dissolving into the CPU in the center."
     >
@@ -23,14 +23,14 @@ const PoweredBySVGLeft = () => {
           <stop offset="100%" stopColor="#D3CC00" stopOpacity="0" />
           <animate
             attributeName="y1"
-            values="1; 0; 0; 0"
-            dur="1s"
+            values="0; 1; 0"
+            dur="6s"
             repeatCount="indefinite"
           />
           <animate
             attributeName="x2"
             values="1; 0; 1"
-            dur="2s"
+            dur="3s"
             repeatCount="indefinite"
           />
         </linearGradient>
@@ -40,9 +40,10 @@ const PoweredBySVGLeft = () => {
 
       {/* Exemplo de caminho com gradiente de cor */}
       <path
+        className="z-0"
         d="M47 20L822 20C824.29 20 826 21.791 826 24L826 1064"
         stroke="url(#orange-pulse-1)"
-        strokeWidth="10"
+        strokeWidth="5"
       />
     </svg>
   )
