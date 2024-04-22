@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <header
       className="w-full fixed left-0 top-0 flex items-center 
-    justify-center"
+    justify-center z-50"
     >
       <nav
         className="w-full p-2 flex items-center justify-center 
@@ -48,7 +48,9 @@ export default function Header() {
             flex justify-center items-center
             w-8 h-8 
             rounded-xl
-            data-[flag=true]:bg-white"
+            data-[flag=true]:bg-red-600
+            data-[flag=true]:text-white
+            "
           >
             <a onClick={() => setFlag('about')} href="#about">
               <AvatarIcon />

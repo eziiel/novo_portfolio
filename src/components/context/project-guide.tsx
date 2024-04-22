@@ -17,7 +17,6 @@ export const ProjectFocusProvider = ({ children }: PropsProvider) => {
   const mark = ['1', '2', '3']
 
   const handleType = (id: string) => {
-    console.log(id, focused)
     if (id === mark[0]) {
       const flag = focused
 
@@ -41,8 +40,6 @@ export const ProjectFocusProvider = ({ children }: PropsProvider) => {
       })
       setFocused(response)
     }
-
-    console.log('focused', focused)
   }
 
   const valueProvider = {
